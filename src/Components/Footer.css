@@ -1,0 +1,19 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  background-color: aquamarine;
+  width: 50%;
+  color: #111;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    margin-top: 10px;
+    font-weight: 600;
+    color: #111;
+    border-radius: 8px;
+    text-align: center;
+}
