@@ -2,6 +2,8 @@ import "./App.css";
 import { useState, useEffect } from "react";
 import Square from "./Components/Square";
 import { Patterns } from "./Patterns";
+import Footer from "./Components/Footer";
+import Header from "./Components/Header";
 
 function App() {
   const [board, setBoard] = useState(["", "", "", "", "", "", "", "", ""]);
@@ -84,6 +86,7 @@ function App() {
 
   return (
     <div className="App">
+      <Header />
       <div className="board">
         {/* 1st row */}
         <div className="row">
@@ -149,6 +152,7 @@ function App() {
           />
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
