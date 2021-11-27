@@ -1,0 +1,83 @@
+[debug] [2021-11-27T05:56:24.048Z] ----------------------------------------------------------------------
+[debug] [2021-11-27T05:56:24.058Z] Command:       /usr/bin/node /usr/local/bin/firebase deploy
+[debug] [2021-11-27T05:56:24.059Z] CLI Version:   9.22.0
+[debug] [2021-11-27T05:56:24.059Z] Platform:      linux
+[debug] [2021-11-27T05:56:24.060Z] Node Version:  v10.19.0
+[debug] [2021-11-27T05:56:24.061Z] Time:          Sat Nov 27 2021 11:26:24 GMT+0530 (India Standard Time)
+[debug] [2021-11-27T05:56:24.061Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-11-27T05:56:24.540Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-11-27T05:56:24.541Z] > authorizing via signed-in user (saroj.vrc@gmail.com)
+[debug] [2021-11-27T05:56:24.542Z] [iam] checking project tic-tac-toe-5438c for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-11-27T05:56:24.550Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-11-27T05:56:24.551Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-11-27T05:56:24.969Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Sat, 27 Nov 2021 05:56:24 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-27T05:56:25.096Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/tic-tac-toe-5438c:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-11-27T05:56:26.723Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 27 Nov 2021 05:56:26 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1200","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-27T05:56:26.729Z] > refreshing access token with scopes: []
+[debug] [2021-11-27T05:56:26.730Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-11-27T05:56:27.017Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","date":"Sat, 27 Nov 2021 05:56:26 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-27T05:56:27.185Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/tic-tac-toe-5438c [none]
+[debug] [2021-11-27T05:56:27.795Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/tic-tac-toe-5438c 200
+[debug] [2021-11-27T05:56:27.795Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/tic-tac-toe-5438c {"projectId":"tic-tac-toe-5438c","projectNumber":"244546096179","displayName":"Tic Tac Toe","name":"projects/tic-tac-toe-5438c","resources":{"hostingSite":"tic-tac-toe-5438c"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'tic-tac-toe-5438c'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-11-27T05:56:27.808Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-11-27T05:56:27.808Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-11-27T05:56:28.063Z] <<< HTTP RESPONSE 200 {"date":"Sat, 27 Nov 2021 05:56:28 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-27T05:56:28.160Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/tic-tac-toe-5438c/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-11-27T05:56:30.562Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 27 Nov 2021 05:56:30 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[tic-tac-toe-5438c]: beginning deploy... 
+[info] i  hosting[tic-tac-toe-5438c]: found 1 files in build 
+[debug] [2021-11-27T05:56:30.577Z] [hosting] hash cache [YnVpbGQ] not populated
+[debug] [2021-11-27T05:56:30.594Z] > refreshing access token with scopes: []
+[debug] [2021-11-27T05:56:30.595Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-11-27T05:56:30.599Z] [hosting] hash cache [YnVpbGQ] stored for 1 files
+[debug] [2021-11-27T05:56:30.599Z] [hosting][hash queue][FINAL] {"max":12,"min":12,"avg":12,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":20}
+[debug] [2021-11-27T05:56:30.875Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","date":"Sat, 27 Nov 2021 05:56:30 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-27T05:56:31.014Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/sites/tic-tac-toe-5438c/versions/30316b9b85515d8f:populateFiles [none]
+[debug] [2021-11-27T05:56:31.014Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/tic-tac-toe-5438c/versions/30316b9b85515d8f:populateFiles {"files":{"/index.html":"3d6824e26b09fa3ff6bb5ce62b29776471a0e4ece374c2ead903b6fa0f3e8b32"}}
+[debug] [2021-11-27T05:56:31.569Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/sites/tic-tac-toe-5438c/versions/30316b9b85515d8f:populateFiles 200
+[debug] [2021-11-27T05:56:31.570Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/tic-tac-toe-5438c/versions/30316b9b85515d8f:populateFiles {"uploadRequiredHashes":["3d6824e26b09fa3ff6bb5ce62b29776471a0e4ece374c2ead903b6fa0f3e8b32"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/tic-tac-toe-5438c/versions/30316b9b85515d8f/files"}
+[debug] [2021-11-27T05:56:31.572Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/tic-tac-toe-5438c/versions/30316b9b85515d8f/files/3d6824e26b09fa3ff6bb5ce62b29776471a0e4ece374c2ead903b6fa0f3e8b32 [none]
+[debug] [2021-11-27T05:56:31.572Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/tic-tac-toe-5438c/versions/30316b9b85515d8f/files/3d6824e26b09fa3ff6bb5ce62b29776471a0e4ece374c2ead903b6fa0f3e8b32 [stream]
+[debug] [2021-11-27T05:56:31.576Z] [hosting][populate queue][FINAL] {"max":979,"min":979,"avg":979,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":983}
+[debug] [2021-11-27T05:56:31.576Z] [hosting] uploads queued: 1
+[debug] [2021-11-27T05:56:33.442Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/tic-tac-toe-5438c/versions/30316b9b85515d8f/files/3d6824e26b09fa3ff6bb5ce62b29776471a0e4ece374c2ead903b6fa0f3e8b32 200
+[debug] [2021-11-27T05:56:33.442Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/tic-tac-toe-5438c/versions/30316b9b85515d8f/files/3d6824e26b09fa3ff6bb5ce62b29776471a0e4ece374c2ead903b6fa0f3e8b32 [stream]
+[debug] [2021-11-27T05:56:33.443Z] [hosting][upload queue][FINAL] {"max":1873,"min":1873,"avg":1873,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1873}
+[info] ✔  hosting[tic-tac-toe-5438c]: file upload complete 
+[debug] [2021-11-27T05:56:33.445Z] [hosting] deploy completed after 2881ms
+[debug] [2021-11-27T05:56:33.449Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "tic-tac-toe-5438c"
+    },
+    "site": "tic-tac-toe-5438c",
+    "version": "sites/tic-tac-toe-5438c/versions/30316b9b85515d8f"
+  }
+]
+[info] i  hosting[tic-tac-toe-5438c]: finalizing version... 
+[debug] [2021-11-27T05:56:33.450Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-11-27T05:56:33.451Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
